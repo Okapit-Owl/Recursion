@@ -7,22 +7,22 @@ void PrintNaturalNumbers(int n, int m)
     if (m > 0 && n > 0)
     {
         if (m == n || n == m) return;
-    if (m > n)
-    {
-        PrintNaturalNumbers(n, m - 1);
-        Console.WriteLine(m);
-    }
-    if (m < n)
-    {
-        PrintNaturalNumbers(n - 1, m);
-        Console.WriteLine(n);
-    }
+        if (m > n)
+        {
+            PrintNaturalNumbers(n, m - 1);
+            Console.WriteLine(m);
+        }
+        if (m < n)
+        {
+            PrintNaturalNumbers(n - 1, m);
+            Console.WriteLine(n);
+        }
     }
     else
     {
         Console.WriteLine("Введено некорректное число!");
     }
-    
+
 }
 
 Console.WriteLine("Введите первое натуральное число");

@@ -6,8 +6,8 @@ void PrintNaturalNumbers(int n, int m)
 {
     if (m > 0 && n > 0)
     {
-        if (m == n || n == m) return;
-        if (m > n)
+        if (m == n || n == m) return; // задачу точно не решила - не выводится первое число промежутка; 
+        if (m > n)                    // вероятно, из-за условия с return; как правильно, не могу догадаться
         {
             PrintNaturalNumbers(n, m - 1);
             Console.WriteLine(m);
